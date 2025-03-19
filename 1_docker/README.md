@@ -13,7 +13,6 @@ projektu na Gradle (build.gradle)
 
 5.0 dodać konfigurację docker-compose
 
+link dockerhub: (https://hub.docker.com/r/szymonoles/my-fullstack-app/tags)
 
-### link dockerhub: (https://hub.docker.com/r/szymonoles/my-fullstack-app/tags)
-
-#### zrobione do : 4.5
+zrobione do : 4.5
