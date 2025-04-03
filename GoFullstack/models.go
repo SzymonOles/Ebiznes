@@ -1,6 +1,8 @@
 package main
 
-import "gorm.io/gorm"
+import (
+	"gorm.io/gorm"
+)
 
 type Product struct {
 	ID         uint    `json:"id" gorm:"primaryKey"`
@@ -20,6 +22,16 @@ type Cart struct {
 	Products []Product `json:"products" gorm:"many2many:cart_products;"`
 }
 
+type Seller struct {
+	ID   uint   `json:"id" gorm:"primaryKey"`
+	Name string `json:"name"`
+}
+
+type Buyer struct {
+	ID   uint   `json:"id" gorm:"primaryKey"`
+	Name string `json:"name"`
+}
+
 func ScopeByCategory(categoryID uint) func(db *gorm.DB) *gorm.DB {
 	return func(db *gorm.DB) *gorm.DB {
 		return db.Where("category_id = ?", categoryID)
@@ -29,5 +41,11 @@ func ScopeByCategory(categoryID uint) func(db *gorm.DB) *gorm.DB {
 func ScopeExpensiveProducts(minPrice float64) func(db *gorm.DB) *gorm.DB {
 	return func(db *gorm.DB) *gorm.DB {
 		return db.Where("price >= ?", minPrice)
+	}
+}
+
+func ScopeWithProducts() func(db *gorm.DB) *gorm.DB {
+	return func(db *gorm.DB) *gorm.DB {
+		return db.Preload("Products")
 	}
 }

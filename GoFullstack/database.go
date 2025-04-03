@@ -13,5 +13,5 @@ func initDB() {
 	if err != nil {
 		panic("failed to connect database")
 	}
-	db.AutoMigrate(&Product{}, &Category{}, &Cart{})
+	db.AutoMigrate(&Product{}, &Category{}, &Cart{}, &Seller{}, &Buyer{})
 }
