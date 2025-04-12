@@ -11,12 +11,16 @@ stworzeniu darmowego konta via https://education.github.com/pack.
 
 :white_check_mark: 3.0 Należy stworzyć 20 przypadków testowych w CypressJS lub Selenium
 (Kotlin, Python, Java, JS, Go, Scala)
+
 :white_check_mark: 3.5 Należy rozszerzyć testy funkcjonalne, aby zawierały minimum 50
 asercji
+
 :white_check_mark: 4.0 Należy stworzyć testy jednostkowe do wybranego wcześniejszego
 projektu z minimum 50 asercjami
+
 :white_check_mark: 4.5 Należy dodać testy API, należy pokryć wszystkie endpointy z
 minimum jednym scenariuszem negatywnym per endpoint
+
 :x: 5.0 Należy uruchomić testy funkcjonalne na Browserstacku
 
 link do video: https://drive.google.com/file/d/1ZALo_YOnPkJ_akfZd-ZkMvUmB9CosdQd/view?usp=sharing / https://github.com/SzymonOles/Ebiznes/blob/main/demos/Testy.mp4
