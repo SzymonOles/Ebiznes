@@ -122,6 +122,7 @@ w kodzie w Sonarze (kod aplikacji serwerowej)
 aplikacji klienckiej
 
 Kod: https://github.com/SzymonOles/SonarGoBackend
+
 Kod: https://github.com/SzymonOles/SonarReactFrontend
 
 Video: https://drive.google.com/file/d/1W4XjNh9Oi5rebKhsg-FkcnoyeZnaycl9/view?usp=sharing / https://github.com/SzymonOles/Ebiznes/blob/main/demos/Sonar.mp4
